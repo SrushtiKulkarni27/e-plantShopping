@@ -252,6 +252,17 @@ function ProductList({ onHomeClick }) {
         e.preventDefault();
         setShowCart(false);
     };
+
+    const handleAddToCart = (product) => {
+        // Dispatch product details to global cart state using Redux
+        dispatch(addItem(product));
+    
+        // Update the addedToCart state to reflect the product added
+        setAddedToCart((prevState) => ({
+          ...prevState,
+          [product.name]: true, // Set the product name as key and value as true to indicate it's added to cart
+        }));
+      };
     return (
         <div>
             <div className="navbar" style={styleObj}>
