@@ -2,6 +2,7 @@
 body, h1, ul {
     margin: 0;
     padding: 0;
+    
 }
 
 /* Set a background color */
@@ -12,7 +13,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #4CAF50;
+    background-color: #4bd84b;
     color: #fff!important;
     padding: 15px;
     display: flex;
@@ -84,6 +85,7 @@ body {
 .product-title {
     font-weight: bold;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 .product-price {
@@ -176,6 +178,7 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
+   text-align: center;
     /* background-color: yellow; */
 }
 .plant_heading{
@@ -185,7 +188,9 @@ body {
     border: 1px solid rgb(5, 4, 4);
     border-left: none;
     border-right: none;
-
+    justify-content: center;
+    align-items: center;
+    
     
 }
 /* Add Media Query for responsiveness */
